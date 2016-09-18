@@ -1,0 +1,110 @@
+body,
+ul,
+li,
+input {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.TZ {
+  transition: all 3s linear;
+  -ms-transition: all 3s linear;
+  -webkit-transition: all 3s linear;
+  -o-transition: all 3s linear;
+  -moz-transition: all 3s linear;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+  width: 222px;
+  height: 222px;
+  margin: 100px auto 0;
+}
+.TZ li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 222px;
+  height: 222px;
+  background: url(../images/1.png) no-repeat;
+}
+.TZ li:nth-child(1) {
+  /* 数字6 */
+  background-position: -18px -229px;
+  transform: translateZ(111px);
+  -ms-transform: translateZ(111px);
+  -webkit-transform: translateZ(111px);
+  -o-transform: translateZ(111px);
+  -moz-transform: translateZ(111px);
+}
+.TZ li:nth-child(2) {
+  /* 数字5 */
+  background-position: -685px -229px;
+  transform: rotateY(90deg) translateZ(111px);
+  -ms-transform: rotateY(90deg) translateZ(111px);
+  -webkit-transform: rotateY(90deg) translateZ(111px);
+  -o-transform: rotateY(90deg) translateZ(111px);
+  -moz-transform: rotateY(90deg) translateZ(111px);
+}
+.TZ li:nth-child(3) {
+  /* 数字4 */
+  background-position: -240px -7px;
+  transform: rotateX(90deg) translateZ(111px);
+  -ms-transform: rotateX(90deg) translateZ(111px);
+  -webkit-transform: rotateX(90deg) translateZ(111px);
+  -o-transform: rotateX(90deg) translateZ(111px);
+  -moz-transform: rotateX(90deg) translateZ(111px);
+}
+.TZ li:nth-child(4) {
+  /* 数字3 */
+  background-position: -240px -451px;
+  transform: rotateX(90deg) translateZ(-111px);
+  -ms-transform: rotateX(90deg) translateZ(-111px);
+  -webkit-transform: rotateX(90deg) translateZ(-111px);
+  -o-transform: rotateX(90deg) translateZ(-111px);
+  -moz-transform: rotateX(90deg) translateZ(-111px);
+}
+.TZ li:nth-child(5) {
+  /* 数字2 */
+  background-position: -240px -229px;
+  transform: rotateY(90deg) translateZ(-111px);
+  -ms-transform: rotateY(90deg) translateZ(-111px);
+  -webkit-transform: rotateY(90deg) translateZ(-111px);
+  -o-transform: rotateY(90deg) translateZ(-111px);
+  -moz-transform: rotateY(90deg) translateZ(-111px);
+}
+.TZ li:nth-child(6) {
+  /* 数字1 */
+  background-position: -463px -229px;
+  transform: translateZ(-111px);
+  -ms-transform: translateZ(-111px);
+  -webkit-transform: translateZ(-111px);
+  -o-transform: translateZ(-111px);
+  -moz-transform: translateZ(-111px);
+}
+.input {
+  width: 400px;
+  height: 180px;
+  position: relative;
+  margin: 50px auto 0;
+}
+.input input {
+  position: absolute;
+}
+.input input:nth-child(1) {
+  top: 0;
+  left: 50%;
+}
+.input input:nth-child(2) {
+  bottom: 0;
+  left: 50%;
+}
+.input input:nth-child(3) {
+  top: 50%;
+  left: 0;
+}
+.input input:nth-child(4) {
+  top: 50%;
+  right: 0;
+}

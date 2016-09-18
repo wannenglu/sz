@@ -1,0 +1,97 @@
+body,ul,li,input{ margin: 0; padding: 0;}
+li{ list-style: none;}
+
+.transform(@var){
+    transform: e(@var);
+    -ms-transform: e(@var);
+    -webkit-transform: e(@var);
+    -o-transform: e(@var);
+    -moz-transform: e(@var);
+}
+
+.transition(@var){
+    transition: e(@var);
+    -ms-transition: e(@var);
+    -webkit-transition: e(@var);
+    -o-transition: e(@var);
+    -moz-transition: e(@var);
+}
+
+@wh: 222px;
+
+.TZ{
+    .transition("all 3s linear");
+    
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    
+    position: relative;
+    width: @wh;
+    height: @wh;
+    margin: 100px auto 0;
+    
+    li{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: @wh;
+        height: @wh;
+        background: url(../images/1.png) no-repeat;
+        
+        &:nth-child(1){/* 数字6 */
+            background-position: -18px -229px;
+            .transform("translateZ(111px)");
+        }
+        
+        &:nth-child(2){/* 数字5 */
+            background-position: -685px -229px;
+            .transform("rotateY(90deg) translateZ(111px)");
+        }
+        
+        &:nth-child(3){/* 数字4 */
+            background-position: -240px -7px;
+            .transform("rotateX(90deg) translateZ(111px)");
+        }
+        
+        &:nth-child(4){/* 数字3 */
+            background-position: -240px -451px;
+            .transform("rotateX(90deg) translateZ(-111px)");
+        }
+        
+        &:nth-child(5){/* 数字2 */
+            background-position: -240px -229px;
+            .transform("rotateY(90deg) translateZ(-111px)");
+        }
+        
+        &:nth-child(6){/* 数字1 */
+            background-position: -463px -229px;
+            .transform("translateZ(-111px)");
+        }
+    }
+}
+
+.input{
+    width: 400px;
+    height: 180px;
+    position: relative;
+    margin: 50px auto 0;
+    input{
+        position: absolute;
+        &:nth-child(1){
+            top: 0;
+            left: 50%;
+        }
+        &:nth-child(2){
+            bottom: 0;
+            left: 50%;
+        }
+        &:nth-child(3){
+            top: 50%;
+            left: 0;
+        }
+        &:nth-child(4){
+            top: 50%;
+            right: 0;
+        }
+    }
+}
